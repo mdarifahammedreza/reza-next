@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           gradientFirst="radial-gradient(68.54% 68.72% at 55.02% 31.46%, rgba(20, 255, 255, 0.1) 0%, rgba(20, 255, 255, 0.05) 50%, rgba(20, 255, 255, 0) 80%)" 
 gradientSecond="radial-gradient(50% 50% at 50% 50%, rgba(20, 255, 255, 0.1) 0%, rgba(20, 255, 255, 0.1) 80%, transparent 100%)"
 gradientThird="radial-gradient(50% 50% at 50% 50%, rgba(20, 255, 255, 0.1) 0%, rgba(20, 255, 255, 0.1) 80%, transparent 100%)"
-duration={.0001}
+duration={20}
           
         />
 
