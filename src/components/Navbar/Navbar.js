@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex justify-between py-2 px-6 items-center relative shadow-sm font-geist-sans z-50"
+      className="flex justify-between py-2 px-6 items-center relative shadow-sm border-b border-gray-800/20 font-geist-sans z-50"
       role="navigation">
       <h1 className="font-bold text-2xl hover:bg-slate-900">
         Re<span className="text-cyan-500 animate-glow">za</span>
