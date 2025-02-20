@@ -98,19 +98,20 @@ export const TypewriterEffectSmooth = ({
   const renderWords = () => {
     return (
       <div>
-        {wordsArray.map((word, idx) => {
-          return (
-            <div key={`word-${idx}`} className="inline-block">
-              {word.text.map((char, index) => (
-                <span
-                  key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}>
-                  {char}
-                </span>
-              ))}
-            </div>
-          );
-        })}
+        {wordsArray.map((word, idx) => (
+  <div key={`word-${idx}`} className="inline-block">
+    {word.text.map((char, index) => (
+      <span
+        key={`char-${index}`}
+        className={cn("dark:text-white text-black", word.className)}
+      >
+        {char}
+      </span>
+    ))}
+    <span>&nbsp;</span> {/* Adding space after each word */}
+  </div>
+))}
+
       </div>
     );
   };

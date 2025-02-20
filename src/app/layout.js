@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[#0e2335] text-white antialiased bg-grid-white relative overflow-hidden`}>
+        className={`${geistSans.variable} ${geistMono.variable} bg-[#0e2335] text-white antialiased bg-grid-white relative overflow-x-hidden`}>
         <Navbar />
         <Spotlight
           fill="rgba(20, 255, 255, 0.8)"
