@@ -35,7 +35,9 @@ const projects = [{
 ];
 export async function GET() {
     return new Response(JSON.stringify(projects), {
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+       },
     });
   }
 
