@@ -11,7 +11,13 @@ const ProjectComponent = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          "https://reza-hnd6ke66i-rezas-projects-ed87c688.vercel.app/api/project"
+          "https://reza-ebon.vercel.app/api/project",
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+            },
+          }
         );
         const data = await res.json();
         setProjects(data);

@@ -6,7 +6,13 @@ const ServiceComponent = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://reza-hnd6ke66i-rezas-projects-ed87c688.vercel.app/api/service")
+    fetch("https://reza-ebon.vercel.app/api/service", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
       .then((res) => res.json())
       .then((data) => setServices(data))
       .catch((err) => console.error("Error fetching services:", err));
