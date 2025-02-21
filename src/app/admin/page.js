@@ -1,12 +1,14 @@
-import { redirect } from "next/dist/server/api-utils";
+// app/admin/page.js
+import { redirect } from "next/navigation";
 
 const Admin = () => {
-  const user = false;
-  if (user) {
-    return <div>Admin Page</div>;
+  const user = false; // Check if the user is authenticated
+
+  if (!user) {
+    redirect("/login"); // Server-side redirect
   }
-  else {
-    redirect("/login");
-  }
+
+  return <div>Admin Page</div>;
 };
+
 export default Admin;
