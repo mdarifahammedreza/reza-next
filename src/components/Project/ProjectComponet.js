@@ -10,7 +10,9 @@ const ProjectComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/project");
+        const res = await fetch(
+          "https://reza-hnd6ke66i-rezas-projects-ed87c688.vercel.app/api/project"
+        );
         const data = await res.json();
         setProjects(data);
       } catch (error) {
@@ -33,8 +35,7 @@ const ProjectComponent = () => {
             <motion.div
               key={index}
               className="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transform transition-transform duration-500 ease-in-out"
-              whileHover={{ scale: 1.05 }}
-            >
+              whileHover={{ scale: 1.05 }}>
               <Image
                 src={project.image}
                 alt={project.title}
@@ -48,8 +49,7 @@ const ProjectComponent = () => {
               <p className="text-gray-300 mb-6">{project.description}</p>
               <a
                 href={project.link}
-                className="text-cyan-500 hover:underline text-lg font-medium"
-              >
+                className="text-cyan-500 hover:underline text-lg font-medium">
                 View Project →
               </a>
             </motion.div>
