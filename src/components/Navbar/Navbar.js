@@ -17,7 +17,7 @@ const Navbar = () => {
       <h1 className="font-bold text-2xl hover:bg-slate-900">
         Re<span className="text-cyan-500 animate-glow">za</span>
       </h1>
-      <ul className="md:flex justify-between space-x-10 items-center hidden ">
+      {/* <ul className="md:flex justify-between space-x-10 items-center hidden ">
         {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
           <li
             key={item}
@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link href={`/${item === "Home" ? "/" : item}`}>{item}</Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
       {/* Glowing effect on the text initially */}
       <style jsx>{`
         .animate-glow {
